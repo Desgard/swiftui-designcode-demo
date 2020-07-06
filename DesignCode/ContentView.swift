@@ -11,10 +11,8 @@ struct ContentView: View {
     var body: some View {
         ZStack {
             
-            HStack {
-                Text("Certificates")
-                Spacer()
-            }
+            TitleView()
+                .blur(radius: 20)
 
             BackCardView()
                 .frame(width: 340, height: 220)
@@ -46,6 +44,10 @@ struct ContentView: View {
             
             CardView()
                 .blendMode(.hardLight)
+            
+            
+            BottomCardView()
+                .blur(radius: 20)
         }
     }
 }
@@ -77,7 +79,7 @@ struct CardView: View {
             .padding(.horizontal, 20)
             .padding(.top, 20)
             Spacer()
-            Image("Background")
+            Image("Certificate1")
                 .resizable()
                 .aspectRatio(contentMode: .fill)
                 .frame(width: 340, height: 110, alignment: .top)
@@ -95,5 +97,44 @@ struct BackCardView: View {
             Spacer()
         }
         
+    }
+}
+
+struct TitleView: View {
+    var body: some View {
+        VStack {
+            HStack {
+                Text("Certificates")
+                    .font(.largeTitle)
+                    .fontWeight(.bold)
+                Spacer()
+            }
+            .padding()
+            Image("Background")
+            Spacer()
+        }
+    }
+}
+
+struct BottomCardView: View {
+    var body: some View {
+        VStack {
+            Rectangle()
+                .frame(width: 40, height: 5)
+                .cornerRadius(3)
+                .opacity(0.1)
+            Text("Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.")
+                .multilineTextAlignment(.leading)
+                .font(.subheadline)
+                .lineSpacing(4)
+            Spacer()
+        }
+        .padding(.top, 8)
+        .padding(.horizontal, 20)
+        .frame(maxWidth: .infinity)
+        .background(Color.white)
+        .cornerRadius(30)
+        .shadow(radius: 20)
+        .offset(x: 0, y: 500)
     }
 }
