@@ -14,7 +14,7 @@ task :release do
     puts "Please input the number: "
     number = gets()
 
-    `git tag -a '#{number}-#{title.downcase.tr(' ', '-')}' -m '#{link}'`
+    `git tag -a '#{number}-#{title.downcase.tr(' ', '-').strip}' -m '#{link}'`
     `git push origin master --tags`
     
     puts "🍺 Done!"
