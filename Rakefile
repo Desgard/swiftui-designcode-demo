@@ -1,6 +1,6 @@
 
 desc "Record the learn part"
-task :release
+task :release do
     puts "Please input the title of the part:"
     title = gets()
     
