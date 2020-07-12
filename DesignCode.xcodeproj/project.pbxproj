@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		8477CCA024BA96CB007CA937 /* UpdateDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8477CC9F24BA96CB007CA937 /* UpdateDetail.swift */; };
 		8477CCA224BA9F6B007CA937 /* UpdateStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8477CCA124BA9F6B007CA937 /* UpdateStore.swift */; };
+		84BC74D624BAAC2F001D3F21 /* TabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84BC74D524BAAC2F001D3F21 /* TabBar.swift */; };
 		84C00A0424B1C35400442FDB /* DesignCodeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C00A0324B1C35400442FDB /* DesignCodeApp.swift */; };
 		84C00A0624B1C35400442FDB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C00A0524B1C35400442FDB /* ContentView.swift */; };
 		84C00A0824B1C35500442FDB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84C00A0724B1C35500442FDB /* Assets.xcassets */; };
@@ -41,6 +42,7 @@
 /* Begin PBXFileReference section */
 		8477CC9F24BA96CB007CA937 /* UpdateDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateDetail.swift; sourceTree = "<group>"; };
 		8477CCA124BA9F6B007CA937 /* UpdateStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateStore.swift; sourceTree = "<group>"; };
+		84BC74D524BAAC2F001D3F21 /* TabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBar.swift; sourceTree = "<group>"; };
 		84C00A0024B1C35400442FDB /* DesignCode.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DesignCode.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		84C00A0324B1C35400442FDB /* DesignCodeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignCodeApp.swift; sourceTree = "<group>"; };
 		84C00A0524B1C35400442FDB /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -114,6 +116,7 @@
 				84E0220924B7392300C5B80A /* HomeView.swift */,
 				84D0482124BA0A4F00D948DA /* UpdateList.swift */,
 				8477CCA124BA9F6B007CA937 /* UpdateStore.swift */,
+				84BC74D524BAAC2F001D3F21 /* TabBar.swift */,
 				8477CC9F24BA96CB007CA937 /* UpdateDetail.swift */,
 				84C00A0724B1C35500442FDB /* Assets.xcassets */,
 				84C00A0C24B1C35500442FDB /* Info.plist */,
@@ -277,6 +280,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84BC74D624BAAC2F001D3F21 /* TabBar.swift in Sources */,
 				8477CCA024BA96CB007CA937 /* UpdateDetail.swift in Sources */,
 				84C00A0624B1C35400442FDB /* ContentView.swift in Sources */,
 				84E0220624B703A400C5B80A /* MenuView.swift in Sources */,
